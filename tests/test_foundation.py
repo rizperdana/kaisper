@@ -9,7 +9,8 @@ def test_settings():
     """Test settings configuration."""
     assert settings.database.host == "localhost"
     assert settings.database.port == 5432
-    assert settings.llm.model == "gpt-4o"
+    assert settings.llm.model == "kilo-auto/free"
+    assert settings.llm.provider == "cliproxyapi"
     assert settings.fetcher.timeout == 30
 
 

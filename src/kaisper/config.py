@@ -21,14 +21,15 @@ class DatabaseSettings(Settings):
 
 class LLMSettings(Settings):
     """LLM API configuration."""
-    
-    provider: str = Field(default="openai", description="LLM provider (openai, ollama)")
-    api_key: str = Field(default="", description="API key")
-    model: str = Field(default="gpt-4o", description="Model name")
+
+    provider: str = Field(default="cliproxyapi", description="LLM provider (openai, ollama, cliproxyapi)")
+    api_key: str = Field(default="sk-dIMp6qoD0oWyMvswe", description="API key")
+    base_url: str = Field(default="http://localhost:83117/v1", description="API base URL")
+    model: str = Field(default="kilo-auto/free", description="Model name")
     temperature: float = Field(default=0.1, description="Temperature for generation")
     max_tokens: int = Field(default=4000, description="Max tokens per request")
     timeout: int = Field(default=120, description="Request timeout in seconds")
-    
+
     class Config:
         env_prefix = "KAISPER_LLM_"
 
