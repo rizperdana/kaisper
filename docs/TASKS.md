@@ -34,47 +34,47 @@ last_updated: 2026-04-26
 ### Next Steps
 - Begin implementation (Phase 1: Foundation)
 
-## Phase 1: Foundation (Not Started)
+## Phase 1: Foundation (Complete)
 
 ### Project Structure
-- [ ] Set up Python project structure (src/kaisper/)
-- [ ] Create pyproject.toml with dependencies
-- [ ] Set up virtual environment
+- [x] Set up Python project structure (src/kaisper/)
+- [x] Create pyproject.toml with dependencies
+- [x] Set up virtual environment
 - [ ] Configure development tools (pytest, black, ruff, mypy)
 
 ### Core Components
-- [ ] Implement fetcher abstraction (Obscura + Playwright)
-- [ ] Implement template storage (SQLite)
-- [ ] Implement PostgreSQL connection pool
+- [x] Implement fetcher abstraction (Obscura + Playwright)
+- [x] Implement template storage (PostgreSQL)
+- [x] Implement PostgreSQL connection pool
 - [ ] Implement S3-compatible storage client
 - [ ] Set up structured logging (structlog)
 
 ### Configuration
-- [ ] Implement Pydantic settings
+- [x] Implement Pydantic settings
 - [ ] Create configuration file template
-- [ ] Set up environment variable handling
+- [x] Set up environment variable handling
 - [ ] Create CLI configuration commands
 
-## Phase 2: Template System (Not Started)
+## Phase 2: Template System (In Progress)
 
 ### Template Schema
-- [ ] Design universal template format (JSON schema)
-- [ ] Implement template validation (Pydantic models)
-- [ ] Create template generator interface
-- [ ] Implement template versioning
+- [x] Design universal template format (JSON schema)
+- [x] Implement template validation (Pydantic models)
+- [x] Create template generator interface
+- [x] Implement template versioning
 
 ### LLM Integration
-- [ ] Implement OpenAI client
+- [x] Implement OpenAI client (cliproxyapi)
 - [ ] Implement Ollama client (fallback)
 - [ ] Design prompt templates for different content types
-- [ ] Implement few-shot learning for extraction
+- [x] Implement few-shot learning for extraction
 - [ ] Add schema-guided extraction
 
 ### Template Generation
 - [ ] Implement DOM analysis for template generation
 - [ ] Implement network request capture
 - [ ] Implement template post-processing
-- [ ] Add template validation and sanitization
+- [x] Add template validation and sanitization
 
 ## Phase 3: Execution Engine (Not Started)
 
