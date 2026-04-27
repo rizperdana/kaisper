@@ -40,22 +40,22 @@ last_updated: 2026-04-26
 - [x] Set up Python project structure (src/kaisper/)
 - [x] Create pyproject.toml with dependencies
 - [x] Set up virtual environment
-- [ ] Configure development tools (pytest, black, ruff, mypy)
+- [x] Configure development tools (pytest, black, ruff, mypy)
 
 ### Core Components
 - [x] Implement fetcher abstraction (Obscura + Playwright)
 - [x] Implement template storage (PostgreSQL)
 - [x] Implement PostgreSQL connection pool
-- [ ] Implement S3-compatible storage client
-- [ ] Set up structured logging (structlog)
+- [x] Implement S3-compatible storage client
+- [x] Set up structured logging (structlog)
 
 ### Configuration
 - [x] Implement Pydantic settings
-- [ ] Create configuration file template
+- [x] Create configuration file template
 - [x] Set up environment variable handling
-- [ ] Create CLI configuration commands
+- [x] Create CLI configuration commands
 
-## Phase 2: Template System (In Progress)
+## Phase 2: Template System (Complete)
 
 ### Template Schema
 - [x] Design universal template format (JSON schema)
@@ -65,15 +65,15 @@ last_updated: 2026-04-26
 
 ### LLM Integration
 - [x] Implement OpenAI client (cliproxyapi)
-- [ ] Implement Ollama client (fallback)
-- [ ] Design prompt templates for different content types
+- [x] Implement Ollama client (fallback)
+- [x] Design prompt templates for different content types
 - [x] Implement few-shot learning for extraction
-- [ ] Add schema-guided extraction
+- [x] Add schema-guided extraction
 
 ### Template Generation
-- [ ] Implement DOM analysis for template generation
-- [ ] Implement network request capture
-- [ ] Implement template post-processing
+- [x] Implement DOM analysis for template generation
+- [x] Implement network request capture
+- [x] Implement template post-processing
 - [x] Add template validation and sanitization
 
 ## Phase 3: Execution Engine (Not Started)
